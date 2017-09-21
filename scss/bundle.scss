@@ -1,0 +1,276 @@
+@import 'partials/mixins';
+// ================ BASIC ================ 
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.text-primary {}
+
+.text-muted {
+    color: #828282;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.clearfix {
+    display: block;
+    width: 100%;
+    clear: both;
+}
+
+// ================ GRIDS ================ 
+// CONTAINERS
+.container-fluid {
+    width: 100%;
+}
+
+.container {
+    margin: 0 auto;
+    padding-top: 30px;
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+        width: 760px;
+    }
+}
+
+@media screen and (min-width: 991px) {
+    .container {
+        width: 870px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+
+// COLUMNS
+[class^="col-"] {
+    float: left;
+    // Gutter
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 3px;
+    // 預設一開始的column為100%
+    width: 100%;
+}
+
+//grid-producer 混合器
+@mixin grid-producer($device) {
+    @for $i from 1 through 12 {
+        .col-#{$device}-#{$i} {
+            width: calc(100% * #{$i}/12);
+        }
+    }
+}
+
+//xs 手機版
+
+/*使用混合器*/
+
+@include grid-producer("xs");
+//sm 平板
+@media screen and (min-width: 768px) {
+    @include grid-producer("sm");
+}
+
+//md 筆電
+@media screen and (min-width: 992px) {
+    @include grid-producer("md");
+}
+
+//lg 桌機螢幕
+@media screen and (min-width: 1200px) {
+    @include grid-producer("lg");
+}
+
+// ================ STYLES ================
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500');
+// section
+.section-title {
+    text-align: center;
+    margin-bottom: 30px;
+    text-decoration: underline;
+    font-family: 'Montserrat', sans-serif;
+    color: #6a7072;
+}
+
+// navbar
+.navbar {
+    margin-bottom: 0;
+}
+
+.logo {
+    height: 20px;
+    float: left;
+}
+
+// header
+.jumbotron {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    margin-bottom: 0;
+    width: 100%;
+    height: 400px;
+    background-image: url("../img/header.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    text-shadow: 0 2px 3px rgba(0, 0, 0, 0.8);
+    filter: grayscale(20%);
+}
+
+.jumbotron h1 {
+    font-size: 50px;
+}
+
+.jumbotron p {
+    font-size: 30px;
+}
+
+// intro
+.intro {
+    position: relative;
+    top: -30px;
+}
+
+// photo
+.photo {
+    width: 100%;
+    position: relative;
+    margin-bottom: 0;
+    overflow: hidden;
+    &:hover {
+        img {
+            @extend %normalTransition;
+            filter: brightness(.3);
+        }
+        span {
+            @extend %normalTransition;
+            opacity: 1;
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    span.name {
+        font-size: 60px;
+    }
+}
+
+.img-photo {
+    width: 100%;
+    border-radius: 25%;
+    display: block;
+    margin: 0 auto;
+}
+
+.photo span {
+    color: white;
+    opacity: 0;
+}
+
+span.name {
+    font-size: 20px;
+    position: absolute;
+    left: 10%;
+    top: 50%;
+    margin: auto;
+}
+
+span.pos {
+    position: absolute;
+    left: 10%;
+    top: 65%;
+}
+
+// 輪播
+#slideshow {
+    height: 300px;
+    padding-top: 50px;
+    background-color: #E9E9E9;
+    img {
+        width: 100%;
+    }
+}
+
+// note userReviewSection
+#slideshow .item {
+    height: 270px;
+}
+
+.carousel-control {
+    &.left,
+    &.right {
+        background-image: none;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    #slideshow {
+        height: 450px;
+        background-color: #E9E9E9;
+    }
+    #slideshow .item {
+        height: 500px;
+        img {
+            width: 150px;
+            height: 150px;
+            margin: 0 auto;
+        }
+        h3,
+        h4,
+        p {
+            margin-left: 15px;
+            margin-right: 15px;
+            text-align: center;
+        }
+    }
+}
+
+// news
+#news {
+    padding-left: 5px;
+    width: 100%;
+}
+
+// gallery
+.photogallery {
+    height: 200px;
+    padding: 2px;
+    background-size: cover;
+    border-radius: 7%;
+    border: 6px solid white;
+}
+
+@for $i from 1 through 16 {
+    #photo#{$i} {
+        background-image: url("../img/photo#{$i}.jpg");
+    }
+}
+
+.btn-space {
+    margin: 30px auto;
+}
+
+// footer
+.footer {
+    height: 250px;
+    background-color: #222222;
+}
+
+.footer-link {
+    color: #7cbeed;
+    margin: 0 10px;
+}
+
+.word-color {
+    color: #9d9d9d;
+}

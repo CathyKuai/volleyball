@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="renderer" content="webkit">
+    <title>main</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bundle.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- todo jquery-easing.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="51">
+    <!--導覽列開始-->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- 導覽列 RWD選單圖示與品牌連結 -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">觸發縮放</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">
+                    <img src="img/logo.png" class="logo" alt="">TPE Volleyball</a>
+            </div>
+
+            <!-- 導覽列中的表單元素 -->
+            <form class="navbar-form navbar-right">
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Search">
+                </div>
+                <button type="submit" class="btn btn-default">SEARCH</button>
+            </form>
+
+            <!-- 小螢幕時要被收起的元素 放置於 navbar-collapse -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <!-- 拉到右邊的導覽列清單 -->
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#intro">ABOUT</a></li>
+                    <li><a href="#team">TEAM</a></li>
+                    <li><a href="#news">NEWS</a></li>
+                    <li><a href="#gallery">GALLERY</a></li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+    <!--導覽列結束-->
+
+    <!-- header -->
+    <header class="jumbotron" id="header">
+        <div class="container text-center">
+            <h1>One Team. One Dream.</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        </div>
+    </header>
+    <!-- header end -->
+    <!-- about -->
+    <section id="intro">
+        <div class="container">
+            <h2 class="section-title">ABOUT US</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto repellendus rerum velit impedit in, accusamus ut animi eaque reiciendis, ex incidunt, tempora labore esse beatae earum? Quo debitis eaque perferendis quos amet hic asperiores error. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit quaerat omnis, aut dignissimos incidunt provident eum veniam voluptates expedita dicta.</p>
+        </div>
+    </section>
+    <!-- about end -->
+    <!-- team -->
+    <section id="team">
+        <div class="container">
+            <h2 class="section-title">TEAM MEMBERS</h2>
+            <div class="row">
+                <div class="col-md-2 col-sm-4 col-xs-12">
+                    <div class="photo">
+                        <img src="img/%E6%80%A1%E5%A6%82.jpg" class="img-photo" alt="">
+                        <span class="name">陳怡如</span><br>
+                        <span class="pos">快攻手</span>
+                    </div>
+                </div>
+                <div class="col-md-2 col-sm-4 col-xs-12">
+                    <div class="photo">
+                        <img src="img/%E5%8D%83%E5%84%80.jpg" class="img-photo" alt="">
+                        <span class="name">謝千儀</span><br>
+                        <span class="pos">舉球員</span>
+                    </div>
+                </div>
+                <div class="col-md-2 col-sm-4 col-xs-12">
+                    <div class="photo">
+                        <img src="img/%E9%98%BF%E9%9D%9E.jpg" class="img-photo" alt="">
+                        <span class="name">陳菀婷</span><br>
+                        <span class="pos">副攻手 隊長</span>
+                    </div>
+                </div>
+                <div class="col-md-2 col-sm-4 col-xs-12">
+                    <div class="photo">
+                        <img src="img/%E5%B0%8F%E7%BE%8A.jpg" class="img-photo" alt="">
+                        <span class="name">楊怡真</span><br>
+                        <span class="pos">舉球員</span>
+                    </div>
+                </div>
+                <div class="col-md-2 col-sm-4 col-xs-12">
+                    <div class="photo">
+                        <img src="img/%E5%BC%B5%E7%A7%9D%E8%8A%B8.jpg" class="img-photo" alt="">
+                        <span class="name">張秝芸</span><br>
+                        <span class="pos">主攻手</span>
+                    </div>
+                </div>
+                <div class="col-md-2 col-sm-4 col-xs-12">
+                    <div class="photo">
+                        <img src="img/%E6%B7%91%E8%8A%AC.jpg" class="img-photo" alt="">
+                        <span class="name">吳淑芬</span><br>
+                        <span class="pos">快攻手</span>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-2 col-sm-4 col-xs-12">
+                    <div class="photo">
+                        <img src="img/%E5%AD%9F%E6%A8%BA.jpg" class="img-photo" alt="">
+                        <span class="name">楊孟樺</span><br>
+                        <span class="pos">自由球員</span>
+                    </div>
+                </div>
+                <div class="col-md-2 col-sm-4 col-xs-12">
+                    <div class="photo">
+                        <img src="img/%E6%BA%AB.jpg" class="img-photo" alt="">
+                        <span class="name">溫憶慈</span><br>
+                        <span class="pos">快攻手</span>
+                    </div>
+                </div>
+                <div class="col-md-2 col-sm-4 col-xs-12">
+                    <div class="photo">
+                        <img src="img/%E5%A7%BF%E7%91%A9.jpg" class="img-photo" alt="">
+                        <span class="name">李姿瑩</span><br>
+                        <span class="pos">主攻手</span>
+                    </div>
+                </div>
+                <div class="col-md-2 col-sm-4 col-xs-12">
+                    <div class="photo">
+                        <img src="img/%E5%A7%BF%E9%9B%85.jpg" class="img-photo" alt="">
+                        <span class="name">陳姿雅</span><br>
+                        <span class="pos">主攻手</span>
+                    </div>
+                </div>
+                <div class="col-md-2 col-sm-4 col-xs-12">
+                    <div class="photo">
+                        <img src="img/%E7%9A%AE%E7%9A%AE.jpg" class="img-photo" alt="">
+                        <span class="name">曾琬羚</span><br>
+                        <span class="pos">快攻手</span>
+                    </div>
+                </div>
+                <div class="col-md-2 col-sm-4 col-xs-12">
+                    <div class="photo">
+                        <img src="img/%E6%AC%A3%E5%A9%B7.jpg" class="img-photo" alt="">
+                        <span class="name">王欣婷</span><br>
+                        <span class="pos">主攻手</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- team end -->
+
+    <!-- blank -->
+
+    <!-- blank end -->
+    <!-- note 做一個Bootstrap輪播投影片:
+            1.放入以下三個user-review
+            2.設定每4秒換一次頁 使用data-interval 一秒就是1000
+        -->
+
+    <!--輪播開始-->
+
+    <div id="slideshow" class="carousel slide" data-ride="carousel" data-interval="5000">
+        <div class="carousel-inner" role="listbox">
+            <!--輪播圖片或內容-->
+            <div class="item active">
+                <!-- 第一頁 -->
+                <div class="row user-review">
+                    <div class="col-sm-2 col-sm-offset-2">
+                        <!-- todo 照片需設定為符合網格大小，且設定邊緣為圓角 -->
+                        <img class="img-responsive img-circle" src="img/%E6%80%A1%E5%A6%82.jpg" alt="reviewer1">
+                    </div>
+                    <div class="col-sm-6">
+                        <h3 class="cn-name">陳怡如</h3>
+                        <h4 class="en-name">CHEN Yi-Ju</h4>
+                        <p>It's definitely the best time saving tools we have purchased in the very long time. It's awesome, really. I can't say enough about how well it's tailored to the needs of their product solutions. Our team has been using tools developed by other companies for 5 years before I choose this one, I will said it better than the others.</p>
+                    </div>
+                </div>
+                <!-- 第一頁 結束 -->
+            </div>
+            <div class="item">
+                <!-- 第二頁 -->
+                <div class="row user-review">
+                    <div class="col-sm-2 col-sm-offset-2">
+                        <!-- todo 照片需設定為符合網格大小，且設定邊緣為圓角 -->
+                        <img class="img-responsive img-circle" src="img/%E5%8D%83%E5%84%80.jpg" alt="reviewer2">
+                    </div>
+                    <div class="col-sm-6">
+                        <h3 class="cn-name">謝千儀</h3>
+                        <h4 class="en-name">Lorraine J. Rollins</h4>
+                        <p>On an everyday basis, They have helps me a lot with the accounting problem with the new release company management software, and we definitely saved lots of money from the software their provides. The training of using this software is so simple. it's so easy to use.</p>
+                    </div>
+                </div>
+                <!-- 第二頁 結束 -->
+            </div>
+            <div class="item">
+                <!-- 第三頁 -->
+                <div class="row user-review">
+                    <div class="col-sm-2 col-sm-offset-2">
+                        <!-- note 照片需設定為符合網格大小，且設定邊緣為圓角 -->
+                        <img class="img-responsive img-circle" src="img/%E9%98%BF%E9%9D%9E.jpg" alt="reviewer3">
+                    </div>
+                    <div class="col-sm-6">
+                        <h3 class="cn-name">陳菀婷</h3>
+                        <h4 class="en-name">CHEN Wan-Ting</h4>
+                        <p>Really smart people, a lot of opportunity for growth, always encouraged to be innovative, think big, and create something new. Competitive salary and benefits with other major tech companies. 100% self motivating work environment. No dress code and 4 legged friends are welcome.</p>
+                    </div>
+                </div>
+                <!-- 第三頁 結束 -->
+            </div>
+            <div class="item">
+                <!-- 第四頁 -->
+                <div class="row user-review">
+                    <div class="col-sm-2 col-sm-offset-2">
+                        <!-- todo 照片需設定為符合網格大小，且設定邊緣為圓角 -->
+                        <img class="img-responsive img-circle" src="img/%E5%B0%8F%E7%BE%8A.jpg" alt="reviewer2">
+                    </div>
+                    <div class="col-sm-6">
+                        <h3 class="cn-name">楊怡真</h3>
+                        <h4 class="en-name">YANG Yi-Chen</h4>
+                        <p>On an everyday basis, They have helps me a lot with the accounting problem with the new release company management software, and we definitely saved lots of money from the software their provides. The training of using this software is so simple. it's so easy to use.</p>
+                    </div>
+                </div>
+                <!-- 第四頁 結束 -->
+            </div>
+            <div class="item">
+                <!-- 第五頁 -->
+                <div class="row user-review">
+                    <div class="col-sm-2 col-sm-offset-2">
+                        <!-- todo 照片需設定為符合網格大小，且設定邊緣為圓角 -->
+                        <img class="img-responsive img-circle" src="img/%E5%BC%B5%E7%A7%9D%E8%8A%B8.jpg" alt="reviewer2">
+                    </div>
+                    <div class="col-sm-6">
+                        <h3 class="cn-name">張秝芸</h3>
+                        <h4 class="en-name">CHANG Li-Yun</h4>
+                        <p>On an everyday basis, They have helps me a lot with the accounting problem with the new release company management software, and we definitely saved lots of money from the software their provides. The training of using this software is so simple. it's so easy to use.</p>
+                    </div>
+                </div>
+                <!-- 第五頁 結束 -->
+            </div>
+            <div class="item">
+                <!-- 第六頁 -->
+                <div class="row user-review">
+                    <div class="col-sm-2 col-sm-offset-2">
+                        <!-- todo 照片需設定為符合網格大小，且設定邊緣為圓角 -->
+                        <img class="img-responsive img-circle" src="img/%E6%B7%91%E8%8A%AC.jpg" alt="reviewer2">
+                    </div>
+                    <div class="col-sm-6">
+                        <h3 class="cn-name">吳淑芬</h3>
+                        <h4 class="en-name">CHANG Li-Yun</h4>
+                        <p>On an everyday basis, They have helps me a lot with the accounting problem with the new release company management software, and we definitely saved lots of money from the software their provides. The training of using this software is so simple. it's so easy to use.</p>
+                    </div>
+                </div>
+                <!-- 第六頁 結束 -->
+            </div>
+            <div class="item">
+                <!-- 第七頁 -->
+                <div class="row user-review">
+                    <div class="col-sm-2 col-sm-offset-2">
+                        <!-- todo 照片需設定為符合網格大小，且設定邊緣為圓角 -->
+                        <img class="img-responsive img-circle" src="img/%E5%AD%9F%E6%A8%BA.jpg" alt="reviewer2">
+                    </div>
+                    <div class="col-sm-6">
+                        <h3 class="cn-name">楊孟樺</h3>
+                        <h4 class="en-name">YANG Meng-Hua</h4>
+                        <p>On an everyday basis, They have helps me a lot with the accounting problem with the new release company management software, and we definitely saved lots of money from the software their provides. The training of using this software is so simple. it's so easy to use.</p>
+                    </div>
+                </div>
+                <!-- 第七頁 結束 -->
+            </div>
+            <div class="item">
+                <!-- 第八頁 -->
+                <div class="row user-review">
+                    <div class="col-sm-2 col-sm-offset-2">
+                        <!-- todo 照片需設定為符合網格大小，且設定邊緣為圓角 -->
+                        <img class="img-responsive img-circle" src="img/%E6%BA%AB.jpg" alt="reviewer2">
+                    </div>
+                    <div class="col-sm-6">
+                        <h3 class="cn-name">溫億慈</h3>
+                        <h4 class="en-name">WEN I-Tzu</h4>
+                        <p>On an everyday basis, They have helps me a lot with the accounting problem with the new release company management software, and we definitely saved lots of money from the software their provides. The training of using this software is so simple. it's so easy to use.</p>
+                    </div>
+                </div>
+                <!-- 第八頁 結束 -->
+            </div>
+            <div class="item">
+                <!-- 第九頁 -->
+                <div class="row user-review">
+                    <div class="col-sm-2 col-sm-offset-2">
+                        <!-- todo 照片需設定為符合網格大小，且設定邊緣為圓角 -->
+                        <img class="img-responsive img-circle" src="img/%E5%A7%BF%E7%91%A9.jpg" alt="reviewer2">
+                    </div>
+                    <div class="col-sm-6">
+                        <h3 class="cn-name">李姿瑩</h3>
+                        <h4 class="en-name">LEE Tzu-Ying</h4>
+                        <p>On an everyday basis, They have helps me a lot with the accounting problem with the new release company management software, and we definitely saved lots of money from the software their provides. The training of using this software is so simple. it's so easy to use.</p>
+                    </div>
+                </div>
+                <!-- 第九頁 結束 -->
+            </div>
+            <div class="item">
+                <!-- 第十頁 -->
+                <div class="row user-review">
+                    <div class="col-sm-2 col-sm-offset-2">
+                        <!-- todo 照片需設定為符合網格大小，且設定邊緣為圓角 -->
+                        <img class="img-responsive img-circle" src="img/%E5%A7%BF%E9%9B%85.jpg" alt="reviewer2">
+                    </div>
+                    <div class="col-sm-6">
+                        <h3 class="cn-name">陳姿雅</h3>
+                        <h4 class="en-name">CHEN Tzu-Ya</h4>
+                        <p>On an everyday basis, They have helps me a lot with the accounting problem with the new release company management software, and we definitely saved lots of money from the software their provides. The training of using this software is so simple. it's so easy to use.</p>
+                    </div>
+                </div>
+                <!-- 第十頁 結束 -->
+            </div>
+            <div class="item">
+                <!-- 第十一頁 -->
+                <div class="row user-review">
+                    <div class="col-sm-2 col-sm-offset-2">
+                        <!-- todo 照片需設定為符合網格大小，且設定邊緣為圓角 -->
+                        <img class="img-responsive img-circle" src="img/%E7%9A%AE%E7%9A%AE.jpg" alt="reviewer2">
+                    </div>
+                    <div class="col-sm-6">
+                        <h3 class="cn-name">曾琬羚</h3>
+                        <h4 class="en-name">TSENG Wan-Ling</h4>
+                        <p>On an everyday basis, They have helps me a lot with the accounting problem with the new release company management software, and we definitely saved lots of money from the software their provides. The training of using this software is so simple. it's so easy to use.</p>
+                    </div>
+                </div>
+                <!-- 第十一頁 結束 -->
+            </div>
+            <div class="item">
+                <!-- 第十二頁 -->
+                <div class="row user-review">
+                    <div class="col-sm-2 col-sm-offset-2">
+                        <!-- todo 照片需設定為符合網格大小，且設定邊緣為圓角 -->
+                        <img class="img-responsive img-circle" src="img/%E6%AC%A3%E5%A9%B7.jpg" alt="reviewer2">
+                    </div>
+                    <div class="col-sm-6">
+                        <h3 class="cn-name">陳欣婷</h3>
+                        <h4 class="en-name">YANG Meng-Hua</h4>
+                        <p>On an everyday basis, They have helps me a lot with the accounting problem with the new release company management software, and we definitely saved lots of money from the software their provides. The training of using this software is so simple. it's so easy to use.</p>
+                    </div>
+                </div>
+                <!-- 第十二頁 結束 -->
+            </div>
+        </div>
+        <!--上一頁 下一頁 按鈕-->
+        <div class="control-btn">
+            <a href="#slideshow" class="left carousel-control" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+            <a href="#slideshow" class="right carousel-control" data-slide="next"><span class="glyphicon glyphicon-chevron-right" ></span></a>
+        </div>
+        <!--小圓點換頁-->
+        <ol class="carousel-indicators">
+            <li data-target="#slideshow" data-slide-to="0" class="active"></li>
+            <li data-target="#slideshow" data-slide-to="1"></li>
+            <li data-target="#slideshow" data-slide-to="2"></li>
+            <li data-target="#slideshow" data-slide-to="3"></li>
+            <li data-target="#slideshow" data-slide-to="4"></li>
+            <li data-target="#slideshow" data-slide-to="5"></li>
+            <li data-target="#slideshow" data-slide-to="6"></li>
+            <li data-target="#slideshow" data-slide-to="7"></li>
+            <li data-target="#slideshow" data-slide-to="8"></li>
+            <li data-target="#slideshow" data-slide-to="9"></li>
+            <li data-target="#slideshow" data-slide-to="10"></li>
+            <li data-target="#slideshow" data-slide-to="11"></li>
+        </ol>
+    </div>
+
+    <!--輪播結尾-->
+
+
+
+
+    <!-- news -->
+    <section id="news">
+        <div class="container">
+            <h2 class="section-title">TOP NEWS</h2>
+            <div class="row">
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="thumbnail">
+                        <img src="img/170917.jpg" style="width: 100%; display: block;" alt="">
+                        <div class="caption">
+                            <h3>中華女排士氣高昂出征世錦資格賽</h3>
+                            <h5>2017/09/17</h5>
+                            <p>今年在世大運拿下第四名，以充滿韌性的表現感動台灣球迷的中華女排，今日中午搭機前往哈薩克，出戰今年的最後一項國際賽事：世錦賽資格賽。 世錦賽女排亞洲區的資格賽分為 A、B 兩組進行，每一組有五支隊伍，每一組取兩支在循環賽中排名最前的隊伍晉級 2018 在日本舉辦的世錦賽... ...</p>
+                            <p>
+                                <a href="http://volleyball.biji.co/index.php?q=news&act=info&id=1072" class="btn btn-primary">繼續閱讀</a>
+
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="thumbnail">
+                        <img src="img/170830.jpg" style="width: 100%; display: block;" alt="">
+                        <div class="caption">
+                            <h3>落後不氣餒 中華女排世大運感動人心</h3>
+                            <h5>2017/08/30</h5>
+                            <p>2017年世界大學運動會，中華女子排球隊在銅牌戰敗給烏克蘭，無緣獎牌；但運動精神掀起排球熱，總教練林明輝日前說：「我給選手打200分，他們打出感動人心的比賽。」 從21日起預賽3比0擊敗法國，台灣女排團結氣勢再贏捷克、哥倫比亞，八強賽輕取阿根廷，在台大體育館掀起排球熱潮，每場比賽都吸引滿場觀眾；關鍵一戰，四強賽1比3不敵日本... ...</p>
+                            <p>
+                                <a href="https://udn.com/news/story/11444/2672361" class="btn btn-primary">繼續閱讀</a>
+
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="thumbnail">
+                        <img src="img/170817.jpg" style="width: 100%; display: block;" alt="">
+                        <div class="caption">
+                            <h3>亞錦女排／中華隊第六名作收　緊接備戰世大運</h3>
+                            <h5>2017/08/17</h5>
+                            <p>前一戰擊敗地主菲律賓，闖進本屆亞洲女排錦標賽五、六名排位戰的中華女排，17日面對越南以0比3(23：25、22：25、23：25)輸球，本屆收下第六名。 本屆賽事在菲律賓馬尼拉舉行，中華女排今日面對越南，前2局都在領先的狀況下遭到逆轉，第三局雖一路拉鋸，無奈最終仍以23：25落敗... ...</p>
+                            <p>
+                                <a href="https://sports.ettoday.net/news/991279" class="btn btn-primary">繼續閱讀</a>
+
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="thumbnail">
+                        <img src="img/170517.jpg" style="width: 100%; display: block;" alt="">
+                        <div class="caption">
+                            <h3>不敵地主泰國　U23中華女排無緣複賽分組冠軍</h3>
+                            <h5>2017/05/17</h5>
+                            <p>賽前拉出4連勝氣勢，中華女排17日在U23女排亞錦賽複賽對抗地主泰國，只要贏球就能取得預賽冠軍，對晉級4強將有極大優勢。可惜最終中華女將以1比3輸球，複賽E組冠軍由泰國隊拿下。 本次U23亞錦賽預賽成績保留至複賽，這也讓拉出4連勝的中華女排擁有絕佳氣勢，今日面對地主泰國只要贏球，就能確定起下E組冠軍，對於後續爭取4強將有極大優勢... ...</p>
+                            <p>
+                                <a href="##" class="btn btn-primary">繼續閱讀</a>
+
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p class="text-center btn-space">
+            <a href="#" class="btn btn-success">Press for more news</a>
+        </p>
+    </section>
+    <!-- news end -->
+
+    <!-- gallery -->
+    <section id="gallery">
+        <div class="container">
+            <h2 class="section-title">GALLERY</h2>
+            <div class="row">
+                <div class="col-md-3 col-xs-6 photogallery" id="photo1"></div>
+                <div class="col-md-3 col-xs-6 photogallery" id="photo2"></div>
+                <div class="col-md-3 col-xs-6 photogallery" id="photo3"></div>
+                <div class="col-md-3 col-xs-6 photogallery" id="photo4"></div>
+            </div>
+            <div class="row">
+                <div class="col-md-3 col-xs-6 photogallery" id="photo5"></div>
+                <div class="col-md-3 col-xs-6 photogallery" id="photo6"></div>
+                <div class="col-md-3 col-xs-6 photogallery" id="photo7"></div>
+                <div class="col-md-3 col-xs-6 photogallery" id="photo8"></div>
+            </div>
+            <div class="row">
+                <div class="col-md-3 col-xs-6 photogallery" id="photo9"></div>
+                <div class="col-md-3 col-xs-6 photogallery" id="photo10"></div>
+                <div class="col-md-3 col-xs-6 photogallery" id="photo11"></div>
+                <div class="col-md-3 col-xs-6 photogallery" id="photo12"></div>
+            </div>
+            <div class="row">
+                <div class="col-md-3 col-xs-6 photogallery" id="photo13"></div>
+                <div class="col-md-3 col-xs-6 photogallery" id="photo14"></div>
+                <div class="col-md-3 col-xs-6 photogallery" id="photo15"></div>
+                <div class="col-md-3 col-xs-6 photogallery" id="photo16"></div>
+            </div>
+        </div>
+        <p class="text-center btn-space">
+            <a href="#" class="btn btn-success">Press for more pics</a>
+        </p>
+    </section>
+    <!-- gallery end -->
+
+
+    <!-- footer -->
+    <footer class="footer">
+        <div class="container">
+            <h2 class="section-title word-color">MORE INFO</h2>
+            <div class="row contact-list text-center">
+                <a href="#" class="footer-link"><i class="fa fa-instagram fa-4x" aria-hidden="true"></i></a>
+                <a href="#" class="footer-link"><i class="fa fa-facebook-square fa-4x" aria-hidden="true"></i></a>
+                <a href="#" class="footer-link"><i class="fa fa-twitter fa-4x" aria-hidden="true"></i></a>
+                <a href="#" class="footer-link"><i class="fa fa-youtube-play fa-4x" aria-hidden="true"></i></a>
+            </div>
+            <h6 class="text-center word-color">copyright&copy;Lorem.</h6>
+        </div>
+    </footer>
+    <!-- footer end -->
+
+
+
+</body>
+
+</html>
